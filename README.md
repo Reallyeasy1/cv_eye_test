@@ -161,7 +161,6 @@ detector = PostureDistanceDetector(
     gender='male',                 # Use male average face width
     face_width=14.5,              # Custom face width in cm
     camera_source=1              # Specify which camera to use (default: 1) 
-                                # (Refer to eyesettings.py)
 )
 
 # Configuration for known face width
