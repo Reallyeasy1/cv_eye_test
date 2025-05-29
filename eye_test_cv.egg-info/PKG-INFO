@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: eye_test_cv
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: mediapipe>=0.8.9
+Requires-Dist: numpy>=1.19.5
+Requires-Dist: pillow>=8.0.0
+Requires-Dist: matplotlib>=3.3.4
+Requires-Dist: psutil>=5.8.0
+Requires-Dist: pathlib>=1.0.1
+Requires-Dist: typing-extensions>=3.7.4
+Requires-Dist: pyyaml>=5.4.1
+Requires-Dist: tqdm>=4.61.0
+Dynamic: license-file
+Dynamic: requires-dist

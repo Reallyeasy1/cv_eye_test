@@ -1,0 +1,10 @@
+opencv-python>=4.5.0
+mediapipe>=0.8.9
+numpy>=1.19.5
+pillow>=8.0.0
+matplotlib>=3.3.4
+psutil>=5.8.0
+pathlib>=1.0.1
+typing-extensions>=3.7.4
+pyyaml>=5.4.1
+tqdm>=4.61.0 

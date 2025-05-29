@@ -1,0 +1,96 @@
+INFO:__main__:Current working directory: C:\Users\Lenovo\Documents\Intern\CV_Proj\main
+INFO:__main__:Running single image test...
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1748498091.508061   26760 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498091.531228   26900 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+INFO:controller:Detailed logging enabled
+INFO:controller:Detailed metrics enabled
+INFO:__main__:Attempting to load image from: C:\Users\Lenovo\Documents\Intern\CV_Proj\main\test_data\image.jpg
+W0000 00:00:1748498091.574652   27968 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+INFO:__main__:Successfully loaded image: (824, 1100, 3)
+W0000 00:00:1748498091.584451   32180 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498091.630641    5296 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498091.662247    5296 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498091.685969   28976 landmark_projection_calculator.cc:186] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+INFO:benchmarks:
+Performance Summary:
+INFO:benchmarks:===================
+INFO:benchmarks:
+System Metrics:
+INFO:benchmarks:CPU Usage: 3.8%
+INFO:benchmarks:Memory Usage: 1.5%
+INFO:benchmarks:
+Model Performance:
+INFO:benchmarks:Inference Time: 0.14ms
+INFO:benchmarks:Detection Accuracy: 1.0%
+INFO:benchmarks:False Positive Rate: 0.0%
+INFO:benchmarks:False Negative Rate: 0.0%
+INFO:benchmarks:Calibration Error: 0.10
+INFO:benchmarks:
+Real-time Performance:
+INFO:benchmarks:Frame Drop Rate: 0.0%
+INFO:benchmarks:Avg Queue Length: 0.0
+INFO:benchmarks:Buffer Utilization: 1.0%
+INFO:benchmarks:End-to-end Latency: 136.42ms
+INFO:__main__:
+Running video test...
+W0000 00:00:1748498098.658901   27964 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+INFO:controller:Detailed logging enabled
+INFO:controller:Detailed metrics enabled
+INFO:__main__:Attempting to load video from: C:\Users\Lenovo\Documents\Intern\CV_Proj\main\test_data\Test.mp4
+W0000 00:00:1748498098.670216   16324 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498098.681919   16324 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498098.705058    7112 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498098.765746   33236 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498098.795094   33236 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+INFO:benchmarks:
+Performance Summary:
+INFO:benchmarks:===================
+INFO:benchmarks:
+System Metrics:
+INFO:benchmarks:CPU Usage: 3.8%
+INFO:benchmarks:Memory Usage: 3.2%
+INFO:benchmarks:
+Model Performance:
+INFO:benchmarks:Inference Time: 0.15ms
+INFO:benchmarks:Detection Accuracy: 1.0%
+INFO:benchmarks:False Positive Rate: 0.0%
+INFO:benchmarks:False Negative Rate: 0.0%
+INFO:benchmarks:Calibration Error: 0.10
+INFO:benchmarks:
+Real-time Performance:
+INFO:benchmarks:Frame Drop Rate: 0.0%
+INFO:benchmarks:Avg Queue Length: 0.0
+INFO:benchmarks:Buffer Utilization: 1.0%
+INFO:benchmarks:End-to-end Latency: 147.98ms
+INFO:__main__:
+Running stress test (5 minutes)...
+W0000 00:00:1748498194.205668    1532 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+INFO:controller:Detailed logging enabled
+INFO:controller:Detailed metrics enabled
+W0000 00:00:1748498194.215973    7844 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498194.222641   22464 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498194.226297    7844 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498194.303136   17160 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1748498194.333541   17160 inference_feedback_manager.cc:114] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+INFO:benchmarks:
+Performance Summary:
+INFO:benchmarks:===================
+INFO:benchmarks:
+System Metrics:
+INFO:benchmarks:CPU Usage: 3.1%
+INFO:benchmarks:Memory Usage: 3.8%
+INFO:benchmarks:
+Model Performance:
+INFO:benchmarks:Inference Time: 0.17ms
+INFO:benchmarks:Detection Accuracy: 1.0%
+INFO:benchmarks:False Positive Rate: 0.0%
+INFO:benchmarks:False Negative Rate: 0.0%
+INFO:benchmarks:Calibration Error: 0.10
+INFO:benchmarks:
+Real-time Performance:
+INFO:benchmarks:Frame Drop Rate: 0.0%
+INFO:benchmarks:Avg Queue Length: 0.0
+INFO:benchmarks:Buffer Utilization: 1.0%
+INFO:benchmarks:End-to-end Latency: 170.41ms
