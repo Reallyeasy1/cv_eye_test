@@ -329,6 +329,11 @@ detector.run()
 - **Future Plans**: See [class-diagram-2.md](class-diagram-2.md)
 - **Full Report**: [CV Project Report](https://docs.google.com/document/d/1JF74Isdvhy2UkuKJPs_AnoDaFP32D5ALjhGi5I3NC6M/edit?usp=sharing)
 
+## Class Diagram 
+
+![Class Diagram](class_diagram.png)
+
+
 ## Future Enhancements
 
 ### Camera Calibration
