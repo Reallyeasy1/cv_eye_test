@@ -12,9 +12,9 @@ This system provides real-time monitoring and feedback for:
 
 ## Project Structure
 
-```
 # Eye Test CV Project Structure
 
+```
 /eye_test_root_cv/
 ├── eye_test_cv/
 │   ├── __pycache__/
@@ -33,14 +33,14 @@ This system provides real-time monitoring and feedback for:
 │   ├── test_data/
 │   │   ├── image.jpg
 │   │   └── Test.mp4
-│   └── views/
-│       ├── __pycache__/
-│       └── display.py
-├──── __init__.py
-├──── benchmarks.py
-├──── controller.py
-├──── main.py
-├──── run_benchmarks.py
+│   ├── views/
+│   │   ├── __pycache__/
+│   │   └── display.py
+│   ├── __init__.py
+│   ├── benchmarks.py
+│   ├── controller.py
+│   ├── main.py
+│   └── run_benchmarks.py
 ├── benchmark_results.txt
 ├── class_diagram.md
 ├── class-diagram-2.md
