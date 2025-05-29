@@ -1,4 +1,4 @@
-# HPB Eye Screening Module
+# Eye Screening Module
 
 A real-time computer vision system for monitoring eye test procedures, ensuring correct user posture, screen distance, and eye closure states.
 
