@@ -36,12 +36,11 @@ This system provides real-time monitoring and feedback for:
 │   └── views/
 │       ├── __pycache__/
 │       └── display.py
-├── __init__.py
-├── benchmarks.py
-├── controller.py
-├── main.py
-├── run_benchmarks.py
-├── eye_test_cv.egg-info/
+├──── __init__.py
+├──── benchmarks.py
+├──── controller.py
+├──── main.py
+├──── run_benchmarks.py
 ├── benchmark_results.txt
 ├── class_diagram.md
 ├── class-diagram-2.md
