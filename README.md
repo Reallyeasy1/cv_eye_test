@@ -13,23 +13,43 @@ This system provides real-time monitoring and feedback for:
 ## Project Structure
 
 ```
-C:\Users\Lenovo\Documents\Intern\CV_Proj\main\
-├── config/              # Configuration files and settings
-├── models/             # Core ML and CV models
-├── views/              # UI and visualization components
-├── utils/              # Utility functions and helpers
-├── test_data/          # Test data and resources
-├── __pycache__/        # Python cache files
-├── controller.py       # Main PostureDistanceDetector controller class
-├── main.py            # Application entry point
-├── benchmarks.py      # Performance benchmarking tools
-├── run_benchmarks.py  # Benchmark runner script
-├── benchmark_results.txt # Benchmark results
-├── requirements.txt    # Project dependencies
-├── LICENSE            # License information
-├── README.md          # This documentation file
-├── class_diagram.md   # Architecture documentation
-└── class-diagram-2.md # Future plans documentation
+# Eye Test CV Project Structure
+
+/eye_test_root_cv/
+├── eye_test_cv/
+│   ├── __pycache__/
+│   ├── config/
+│   │   ├── __pycache__/
+│   │   ├── logging_config.py
+│   │   └── settings.py
+│   ├── models/
+│   │   ├── __pycache__/
+│   │   ├── calibration.py
+│   │   ├── camera.py
+│   │   ├── distance.py
+│   │   ├── eye_tracker.py
+│   │   ├── metrics.py
+│   │   └── posture.py
+│   ├── test_data/
+│   │   ├── image.jpg
+│   │   └── Test.mp4
+│   └── views/
+│       ├── __pycache__/
+│       └── display.py
+├── __init__.py
+├── benchmarks.py
+├── controller.py
+├── main.py
+├── run_benchmarks.py
+├── eye_test_cv.egg-info/
+├── benchmark_results.txt
+├── class_diagram.md
+├── class-diagram-2.md
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── setup.py
+└── test_import.py
 ```
 
 ## Features
@@ -69,6 +89,21 @@ C:\Users\Lenovo\Documents\Intern\CV_Proj\main\
   matplotlib >= 3.10.3
   ```
 
+## Dependencies Details
+
+### Core Functionality
+- **OpenCV**: Camera handling, image processing
+- **MediaPipe**: Pose estimation, face mesh detection
+- **NumPy**: Numerical computations, array operations
+
+### Visualization
+- **Matplotlib**: Data visualization, status indicators
+- **Pillow**: Image handling and processing
+
+### Standard Library
+- **logging**: Application logging
+- **time**: Frame rate control
+- **collections.deque**: Temporal smoothing
 ## Installation
 
 1. Clone the repository:
@@ -125,7 +160,8 @@ detector = PostureDistanceDetector(
     auto_calibrate=True,           # Enable automatic camera calibration
     gender='male',                 # Use male average face width
     face_width=14.5,              # Custom face width in cm
-    camera_source=0               # Specify which camera to use (default: 0)
+    camera_source=1              # Specify which camera to use (default: 1) 
+                                # (Refer to eyesettings.py)
 )
 
 # Configuration for known face width
@@ -135,15 +171,6 @@ detector = PostureDistanceDetector(
     face_width=13.8,              # Specific face width measurement
     camera_source=0
 )
-
-# Enables logging
-detector.enableLogging() 
-
-# Enables metrics
-detector.enableMetrics()
-
-# Runs the detector
-detector.run()
 ```
 
 ### Class Methods
@@ -262,17 +289,17 @@ When metrics are enabled:
 ### Usage Example
 
 ```python
-from PostureDistanceDetector import PostureDistanceDetector
-
-# Enable detailed logging and metrics
-PostureDistanceDetector.enableLogging()
-PostureDistanceDetector.enableMetrics()
+from eye_test_cv import PostureDistanceDetector
 
 # Initialize detector
 detector = PostureDistanceDetector(
     auto_calibrate=True,
     gender='average'
 )
+
+# Enable detailed logging and metrics
+detector.enableLogging()
+detector.enableMetrics()
 
 # Run the detection system
 detector.run()
@@ -324,18 +351,27 @@ detector.run()
 - Machine learning integration
 - Dynamic reference point adjustment
 
-## Dependencies Details
+### Performance Optimizations
+- Frame Rate Control
+  - Cap framerate at 15-20 FPS for optimal performance
+  - Adaptive frame rate based on device capabilities
+  - Reduced power consumption on mobile devices
 
-### Core Functionality
-- **OpenCV**: Camera handling, image processing
-- **MediaPipe**: Pose estimation, face mesh detection
-- **NumPy**: Numerical computations, array operations
+- Model Optimization (Expected Gains: 50-60% faster inference)
+  - Model pruning to remove redundant neurons/weights
+  - Integration with TensorFlow Model Optimization toolkit
+  - Network architecture refinement for mobile deployment
+  - Reduced model size (up to 4x smaller)
+  - Lower RAM usage (approximately 40% reduction)
 
-### Visualization
-- **Matplotlib**: Data visualization, status indicators
-- **Pillow**: Image handling and processing
+- Input Processing
+  - Reduced input image dimensions (45% fewer pixels)
+  - Optimized for tablet screens (e.g., Tab A8's 800x1280)
+  - Prevention of auto-rotation overhead
+  - Efficient frame buffering
 
-### Standard Library
-- **logging**: Application logging
-- **time**: Frame rate control
-- **collections.deque**: Temporal smoothing
+- Mobile-First Optimizations
+  - INT8/FP16 quantization using TensorFlow Lite
+  - Model compression techniques
+  - Battery-aware processing
+  - Optimized memory management

@@ -1,4 +1,3 @@
-# From anywhere in your Python environment
 from eye_test_cv import PostureDistanceDetector
 
 # Initialize detector
