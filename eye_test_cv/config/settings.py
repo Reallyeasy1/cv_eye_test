@@ -2,6 +2,8 @@
 FOCAL_LENGTH_35MM = 35.0  # Standard focal length in 35mm format
 SENSOR_WIDTH_35MM = 24.0  # Standard sensor width in 35mm format
 IMAGE_WIDTH_PX = 1932      # Image width in pixels
+
+# Camera Focal Length in Pixels
 FOCAL_LENGTH_PX = 251.837
 
 # Posture thresholds

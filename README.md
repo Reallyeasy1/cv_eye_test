@@ -167,10 +167,10 @@ detector = PostureDistanceDetector(
     auto_calibrate=False,
     gender='female',
     face_width=13.8,              # Specific face width measurement
-    camera_source=0
+    camera_source="http://192.168.50.28:4747/video"
 )
 ```
-
+*Note: To calibrate the focal length in pixels of the detector, go to config/settings.py and adjust FOCAL_LENGTH_PX*
 ### Class Methods
 
 #### Configuration Methods
